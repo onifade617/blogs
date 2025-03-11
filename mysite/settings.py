@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-@2cd)_kj)^haum)@7fxku^mkksj7rfny#@q3a=&^y5iu**3$ta
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://blogs-jv42.onrender.com', 'blogs-jv42.onrender.com']
+ALLOWED_HOSTS = ['https://blogs-jv42.onrender.com', 'blogs-jv42.onrender.com', '127.0.0.1']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
+    'blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [
